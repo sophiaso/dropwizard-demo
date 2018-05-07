@@ -12,3 +12,14 @@ Operational Tools
 ---
 
 To see the operational tools dropwizard provides enter url `http://localhost:8081`
+
+
+Run with Docker
+---
+
+1. Run `mvn package` to package and build the docker image
+1. Start docker container with docker command.
+	```
+	docker run -d -p 8080:8080 -p 8081:8081 demo/dropwizard-demo:latest
+	```
+1. Same way to access as above urls
